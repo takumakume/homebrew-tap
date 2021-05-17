@@ -5,16 +5,16 @@
 class KubectlCredentialsBroker < Formula
   desc "Before kubectl run execute any command provides credential to kubectl"
   homepage "https://github.com/takumakume/kubectl-credentials-broker"
-  version "0.0.6"
+  version "0.1.0"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/takumakume/kubectl-credentials-broker/releases/download/0.0.6/kubectl-credentials-broker_0.0.6_Darwin_x86_64.tar.gz"
-    sha256 "ceebd129dd8327e573261b8a873736d2bf9b944acd13cd39249c6569494bb879"
+    url "https://github.com/takumakume/kubectl-credentials-broker/releases/download/v0.1.0/kubectl-credentials-broker_0.1.0_Darwin_x86_64.tar.gz"
+    sha256 "d7d351e648e065e37ced0394571c6367a0114f92ce385187cd8c146005847155"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/takumakume/kubectl-credentials-broker/releases/download/0.0.6/kubectl-credentials-broker_0.0.6_Linux_x86_64.tar.gz"
-    sha256 "7ff2de6fc0a66552b03d86c0fc2256a372c50f2cf9a66e02e6315ffdaa8ac6dd"
+    url "https://github.com/takumakume/kubectl-credentials-broker/releases/download/v0.1.0/kubectl-credentials-broker_0.1.0_Linux_x86_64.tar.gz"
+    sha256 "9402eed20775a61bef48d7cba0692c273621cd58b57e09a8816ee87327a9b9a7"
   end
 
   def install
